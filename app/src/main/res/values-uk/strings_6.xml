@@ -1,0 +1,125 @@
+<resources>
+    <string name="crash_title">
+        Вибачте, сталася помилка в застосунку.\n\n
+        Скопіюйте наведений нижче вміст і повідомте про проблему на github, перед повідомленням видаліть будь-яку конфіденційну інформацію.
+    </string>
+    <string-array name="short_weekdays">
+        <item>Не</item>
+        <item>По</item>
+        <item>Вів</item>
+        <item>Сер</item>
+        <item>Чет</item>
+        <item>П\'ят</item>
+        <item>Суб</item>
+    </string-array>
+
+    <string-array name="block_type_list">
+        <item>Відхилити</item>
+        <item>Заглушити</item>
+        <item>Прийняти+Повісити</item>
+    </string-array>
+
+    <string name="show_passed">Показати пропущене</string>
+    <string name="show_blocked">Показати заблоковане</string>
+
+    <string name="confirm_delete_all_records">Підтвердити видалення всіх записів?</string>
+    <string name="log_sms_content">Журнал вмісту SMS</string>
+    <string name="expiry">Закінчення</string>
+    <string name="days">Днів</string>
+    <string name="help_history_ttl">
+        <![CDATA[
+            <font color="#00BFFF"><b>> 0</b></font><br>
+            &emsp; Записи журналу зберігатимуться в базі даних і завершуватимуться через N днів, записи терміну дії автоматично видалятимуться.<br>
+            <br>
+            <font color="#00BFFF"><b>= 0</b></font><br>
+            &emsp; Журнал історії вимкнено, нічого не буде записано в базу даних.<br>
+            <br>
+            <font color="#00BFFF"><b>< 0</b></font><br>
+            &emsp; Записи буде записано і вони ніколи не закінчаться.
+        ]]>
+    </string>
+    <string name="help_log_sms_content">
+        <![CDATA[
+        Якщо активовано, вміст SMS також зберігатиметься в базі даних і відображатиметься в цьому списку, він не буде записаний в базу даних, якщо вимкнено.<br>
+        <br>
+        - Якщо активовано:<br>
+        &emsp; <b>Натисніть</b>, щоб розгорнути/згорнути повне повідомлення.<br>
+        <br>
+        - Якщо вимкнено:<br>
+        &emsp; <b>Натисніть</b>, щоб відкрити розмову в стандартному застосунку.
+        ]]>
+    </string>
+
+    <string-array name="history_record_context_menu">
+        <item>Копіювати номер</item>
+        <item>Додати номер до нового правила</item>
+    </string-array>
+
+    <string-array name="importance_list">
+        <item>Жодне</item>
+        <item>Тінь</item>
+        <item>Рядок стану, Тінь</item>
+        <item>Звук, Рядок стану, Тінь</item>
+        <item>Звук, Рядок стану, Тінь, Зверху</item>
+    </string-array>
+    <string-array name="export_type_list">
+        <item>Експортувати як Json</item>
+        <item>Експортувати як Стиснений</item>
+    </string-array>
+
+    <string name="language">Мова</string>
+    <string name="help_language">
+        <![CDATA[
+            Переклади зроблені Google AI, подайте проблему на github для додавання підтримки нових мов.
+        ]]>
+    </string>
+    <string name="enabled_for_call">Увімкнути для Дзвінка</string>
+    <string name="enabled_for_sms">Увімкнути для SMS</string>
+    <string name="repeated_call">Повторюваний дзвінок</string>
+    <string name="help_repeated_call">
+        <![CDATA[
+        Дозволити, якщо дзвінок повторюється протягом певного періоду часу, ймовірно, це важливий дзвінок, а не спам. <br>
+        <br>
+        Отримання текстового повідомлення з одного й того ж номера також враховується, це залежить від того, чи надано дозвіл READ_SMS, який є необов’язковим.<br>
+        <br>
+        Настроювання за замовчуванням <font color="#03DAC5"><b>1 / 5 Хв</b></font> означає, що другий дзвінок протягом 5 хвилин буде дозволено. <br>
+        <br>
+        Застосовується лише для дзвінків, <b>не</b> для текстових повідомлень. <br>
+        <br>
+        <font color="#ea86ff"><b>Пріоритет: 10</b></font>
+        ]]>
+    </string>
+
+    <string name="help_globally_enabled">
+        <![CDATA[
+        Глобальний перемикач, цей застосунок працює лише тоді, коли він увімкнений. Вимкніть його, коли чекаєте на певний дзвінок/повідомлення. <br>
+        <br>
+        Його також можна перемикати з <font color="#6ed0ff"><b>Випадаючі швидкі налаштування</b></font>.<br>
+        <br>
+        Для SMS цей застосунок перейме на себе SMS-повідомлення, будь ласка,
+        <font color="#fa7f71"><b>вимкніть дозвіл на повідомлення в стандартному застосунку SMS</b></font> в системних налаштуваннях,
+        в іншому випадку будуть подвійні повідомлення.
+        Він фільтрує лише SMS-повідомлення, спам-повідомлення як і раніше будуть присутні в стандартному застосунку SMS.
+        ]]>
+    </string>
+
+    <string name="about">Про</string>
+    <string name="version">Версія</string>
+    <string name="build_time">Час збірки (UTC)</string>
+    <string name="source_code">Вихідний код</string>
+    <string name="dismiss">Відмінити</string>
+    <string name="warning_running_in_work_profile">
+        Цей застосунок може працювати неправильно в робочому профілі, натомість інсталюйте його в головному профілі.
+    </string>
+    <string-array name="import_csv_type">
+        <item>Імпортувати .csv як одне правило</item>
+        <item>Імпортувати .csv як декілька правил</item>
+    </string-array>
+    <string name="warning_double_sms">
+        Цей застосунок перейме на себе всі SMS-повідомлення,
+        але дозвіл на повідомлення в стандартному застосунку SMS також увімкнено,
+        будь ласка, вимкніть його в системних налаштуваннях, щоб запобігти подвійним SMS-повідомленням.
+    </string>
+    <string name="open_settings">Відкрити налаштування</string>
+    <string name="ignore">Ігнорувати</string>
+</resources>

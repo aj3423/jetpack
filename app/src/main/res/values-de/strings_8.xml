@@ -1,0 +1,119 @@
+<resources>
+    <string name="database">Datenbank</string>
+    <string name="total">Gesamt</string>
+    <string name="replace_from">Von</string>
+    <string name="replace_to">Nach</string>
+    <string name="regex_pattern">RegEx</string>
+
+    <string name="help_spam_db">
+        <![CDATA[
+        <no_translate>Nummern</no_translate> in dieser Datenbank werden blockiert.<br>
+        <br>
+        Du kannst beliebige öffentliche Datenbanken oder sogar mehrere Datenbanken integrieren. Außerdem kannst du <no_translate>Nummern</no_translate> aus lokalen Dateien importieren.<br>
+        <br>
+        Informiere dich im folgenden Abschnitt "Automatisierung", wie du eine automatische Importaufgabe planst.<br>
+        <br>
+        Dies gilt sowohl für Anrufe als auch für SMS-Nachrichten.<br>
+        <br>
+        <font color="#ea86ff"><b>Priorität: 0</b></font>
+        ]]>
+    </string>
+    <string name="help_spam_db_ttl">Spam-<no_translate>Nummern</no_translate> in der Datenbank verfallen nach N Tagen. Abgelaufene Einträge werden automatisch gelöscht.</string>
+    <string name="customize">Anpassen</string>
+    <string name="workflow">Workflow</string>
+    <string name="workflows">Workflows</string>
+    <string name="automation">Automatisierung</string>
+    <string name="help_workflows">
+        <![CDATA[
+        Workflows können verwendet werden, um Aufgaben automatisch auszuführen, wie z. B. das Aktualisieren der Datenbank oder die automatische Sicherung.<br>
+        <br>
+        Es gibt Voreinstellungen für eine schnelle Einrichtung. Du kannst sie aber auch von Grund auf neu erstellen oder aus einer JSON-Konfiguration importieren, die von anderen Benutzern geteilt wurde.<br>
+        <br>
+        Wenn du einen Workflow findest, der allgemein verwendet werden könnte und zu den Voreinstellungen hinzugefügt werden sollte, melde ihn bitte auf Github.
+        ]]>
+    </string>
+    <string name="manual">Manuell</string>
+
+    <string name="bot_preset_dnc"><no_translate>FTC - Do Not Call</no_translate></string>
+    <string name="bot_preset_cleanup_spam_db">Spam-Datenbankbereinigung</string>
+    <string name="bot_preset_cleanup_history">Verlaufsbereinigung</string>
+    <string name="bot_preset_auto_backup">Automatische Sicherung</string>
+
+    <string name="action_cleanup_history">Verlauf bereinigen</string>
+    <string name="action_http_download">HTTP-Download</string>
+    <string name="action_cleanup_spam_db">Spam-<no_translate>Datenbank</no_translate> bereinigen</string>
+    <string name="action_backup_export">Sicherung exportieren</string>
+    <string name="action_backup_import">Sicherung importieren</string>
+    <string name="action_read_file">Datei lesen</string>
+    <string name="action_write_file">Datei schreiben</string>
+    <string name="action_parse_csv">CSV parsen</string>
+    <string name="action_parse_xml">XML parsen</string>
+    <string name="action_regex_extract">Regex extrahieren</string>
+    <string name="action_import_to_spam_db">In <no_translate>Spam-Datenbank</no_translate> importieren</string>
+    <string name="action_import_as_regex_rule">Als Regex-Regel importieren</string>
+    <string name="action_convert_number"><no_translate>Nummer</no_translate> ersetzen</string>
+
+    <string name="help_action_http_download">
+        <![CDATA[
+        HTTP-Datei als <u>Inhaltsbytes</u> herunterladen
+        ]]>
+    </string>
+    <string name="help_action_cleanup_spam_db">Abgelaufene <no_translate>Nummern</no_translate> aus der <no_translate>Spam-Datenbank</no_translate> löschen.</string>
+    <string name="help_action_cleanup_history">Abgelaufene Verlaufseinträge löschen.</string>
+    <string name="help_action_backup_export">
+        <![CDATA[
+        Exportiere die aktuellen Einstellungen in <u>Inhaltsbytes</u>.
+        ]]>
+    </string>
+    <string name="help_action_backup_import">
+        <![CDATA[
+        Wende Einstellungen aus <u>Inhaltsbytes</u> an.
+        ]]>
+    </string>
+    <string name="help_action_read_file">
+        <![CDATA[
+        Rufe die <u>Inhaltsbytes</u> aus einer Datei ab.
+        ]]>
+    </string>
+    <string name="help_action_write_file">
+        <![CDATA[
+        Schreibe <u>Inhaltsbytes</u> in eine Datei.
+        ]]>
+    </string>
+    <string name="help_action_parse_csv">
+        <![CDATA[
+        Analysiere CSV-<u>Inhaltsbytes</u> in eine <u>Nummern</u>liste
+        ]]>
+    </string>
+    <string name="help_action_parse_xml">
+        <![CDATA[
+        Parst XML-<u>Inhaltsbytes</u> mit <b>XPath</b> und generiere eine <u><no_translate>Nummern</no_translate>liste</u>.
+        ]]>
+    </string>
+    <string name="help_action_regex_extract">
+        <![CDATA[
+        Entferne eine <u><no_translate>Nummern</no_translate>liste</u>. aus den Eingabe-<no_translate>Inhaltsbytes</no_translate> mit diesem RegEx.
+        ]]>
+    </string>
+    <string name="help_action_import_to_spam_db">
+        <![CDATA[
+        Füge eine <u><no_translate>Nummern</no_translate>liste</u> zur <no_translate>Spam-Datenbank</no_translate> hinzu.
+        ]]>
+    </string>
+    <string name="help_action_import_as_regex_rule">
+        <![CDATA[
+        Generiere eine neue Regex-Regel aus einer <u><no_translate>Nummern</no_translate>liste</u>.
+        ]]>
+    </string>
+    <string name="help_action_convert_number">
+        <![CDATA[
+        Wandelt die <u><no_translate>Nummern</no_translate>liste</u> in das von dieser App verwendete Format um.<br>
+        <br>
+        Beispielsweise füge zwei Aktionen hinzu, um Folgendes zu ersetzen:<br>
+        `<font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font>` durch `12345<font color="#03DAC5"><b>....</b></font>`:<br>
+        <br>
+        &ensp; - Ersetze `<font color="#fa7f71">(+)</font>` durch ``<br>
+        &ensp; - Ersetze `<font color="#fa7f71">(#)</font>` durch `<font color="#03DAC5"><b>.</b></font>`<br>
+        ]]>
+    </string>
+</resources>

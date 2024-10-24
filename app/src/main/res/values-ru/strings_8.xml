@@ -1,0 +1,119 @@
+<resources>
+    <string name="database">База данных</string>
+    <string name="total">Всего</string>
+    <string name="replace_from">С</string>
+    <string name="replace_to">На</string>
+    <string name="regex_pattern">RegEx</string>
+
+    <string name="help_spam_db">
+        <![CDATA[
+        <short>Номера</short> в этой базе данных будут заблокированы.<br>
+        <br>
+        Вы можете интегрировать любую общедоступную базу данных, или даже несколько баз данных. Вы также можете импортировать <short>номера</short> из локальных файлов.<br>
+        <br>
+        Проверьте раздел "Автоматизация" ниже для того, чтобы узнать, как запланировать задачу автоматического импорта.<br>
+        <br>
+        Это применимо как к звонкам, так и к SMS-сообщениям.<br>
+        <br>
+        <font color="#ea86ff"><b>Приоритет: 0</b></font>
+        ]]>
+    </string>
+    <string name="help_spam_db_ttl">Занесённые в базу данных спам-<short>номера</short> будут удаляться через N дней. Истёкшие записи будут удалены автоматически.</string>
+    <string name="customize">Настройка</string>
+    <string name="workflow">Рабочий процесс</string>
+    <string name="workflows">Рабочие процессы</string>
+    <string name="automation">Автоматизация</string>
+    <string name="help_workflows">
+        <![CDATA[
+        Рабочие процессы могут использоваться для автоматического выполнения задач, таких как обновление базы данных или автоматическое резервное копирование.<br>
+        <br>
+        Есть предустановки для быстрой настройки. Вы также можете создать <short>рабочий процесс</short> с нуля или импортировать его из конфигурации json, которой поделились другие пользователи.<br>
+        <br>
+        Если вы нашли <short>рабочий процесс</short>, который может быть широко использован и должен быть добавлен в предустановки, сообщите об этом на github.
+        ]]>
+    </string>
+    <string name="manual">Вручную</string>
+
+    <string name="bot_preset_dnc"><no_translate>FTC - Do Not Call</no_translate></string>
+    <string name="bot_preset_cleanup_spam_db">Очистка базы данных спама</string>
+    <string name="bot_preset_cleanup_history">Очистка истории</string>
+    <string name="bot_preset_auto_backup">Автоматическое резервное копирование</string>
+
+    <string name="action_cleanup_history">Очистить историю</string>
+    <string name="action_http_download">Скачать через HTTP</string>
+    <string name="action_cleanup_spam_db">Очистить базу данных спама</string>
+    <string name="action_backup_export">Экспорт резервной копии</string>
+    <string name="action_backup_import">Импорт резервной копии</string>
+    <string name="action_read_file">Считать файл</string>
+    <string name="action_write_file">Записать в файл</string>
+    <string name="action_parse_csv">Парсить CSV</string>
+    <string name="action_parse_xml">Парсить XML</string>
+    <string name="action_regex_extract">Извлечение с помощью регулярного выражения</string>
+    <string name="action_import_to_spam_db">Импортировать в базу данных спама</string>
+    <string name="action_import_as_regex_rule">Импортировать как правило регулярного выражения</string>
+    <string name="action_convert_number">Заменить <short>номер</short></string>
+
+    <string name="help_action_http_download">
+        <![CDATA[
+        Загрузить файл через HTTP в виде <u>байтов содержимого</u>
+        ]]>
+    </string>
+    <string name="help_action_cleanup_spam_db">Удалить истёкшие <short>номера</short> из базы данных спама.</string>
+    <string name="help_action_cleanup_history">Удалить истёкшие записи истории.</string>
+    <string name="help_action_backup_export">
+        <![CDATA[
+        Экспортировать текущие настройки в <u>байты содержимого</u>.
+        ]]>
+    </string>
+    <string name="help_action_backup_import">
+        <![CDATA[
+        Применить настройки из <u>байт содержимого</u>.
+        ]]>
+    </string>
+    <string name="help_action_read_file">
+        <![CDATA[
+        Получить <u>байты содержимого</u> из файла.
+        ]]>
+    </string>
+    <string name="help_action_write_file">
+        <![CDATA[
+        Записать <u>байты содержимого</u> в файл.
+        ]]>
+    </string>
+    <string name="help_action_parse_csv">
+        <![CDATA[
+        Парсить <u>байты содержимого</u> csv в <u>список номеров</u>
+        ]]>
+    </string>
+    <string name="help_action_parse_xml">
+        <![CDATA[
+        Парсить <u>байты содержимого</u> xml с использованием <b>xpath</b> и сгенерировать <u>список номеров.</u>
+        ]]>
+    </string>
+    <string name="help_action_regex_extract">
+        <![CDATA[
+        Извлечь <u>список номеров.</u> из входных <u>байт содержимого</u> с помощью этого регулярного выражения.
+        ]]>
+    </string>
+    <string name="help_action_import_to_spam_db">
+        <![CDATA[
+        Добавить <u>список номеров</u> в базу данных спама.
+        ]]>
+    </string>
+    <string name="help_action_import_as_regex_rule">
+        <![CDATA[
+        Сгенерировать новое правило регулярного выражения из <u>списка номеров</u>.
+        ]]>
+    </string>
+    <string name="help_action_convert_number">
+        <![CDATA[
+        Преобразовать <u>список номеров</u> в формат, используемый этим приложением.<br>
+        <br>
+        Например, добавьте два действия для замены:<br>
+        `<font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font>` на `12345<font color="#03DAC5"><b>....</b></font>`:<br>
+        <br>
+        &ensp; - Заменить `<font color="#fa7f71">(+)</font>` на ``<br>
+        &ensp; - Заменить `<font color="#fa7f71">(#)</font>` на `<font color="#03DAC5"><b>.</b></font>`<br>
+        ]]>
+    </string>
+</resources>
